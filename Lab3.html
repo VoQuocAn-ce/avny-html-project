@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./bootstrap.min.js"></script>
+
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./ranni-the-witch-elden-ring-2k-wallpaper-uhdpaper.com-245@1@g.jpg" class="d-block w-100"
+                    alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./912921.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./4abc7a8642aaf4224f813957ee67cb3e.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- card 1 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./thumbbig-1368234.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fancy Product</h5>
+                        <p class="card-text">$40.00 - $80.00</p>
+                        <a href="#" class="btn btn-outline-dark">View options</a>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 position-relative">
+                    <span class="badge bg-dark position-absolute top-0 end-0 m-2">Sale</span>
+                    <img src="./4abc7a8642aaf4224f813957ee67cb3e.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Special Item</h5>
+                        <div class="mb-2 text-warning">
+                            ★★★★★
+                        </div>
+                        <p class="card-text"><s>$20.00</s> $18.00</p>
+                        <a href="#" class="btn btn-outline-dark">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 position-relative">
+                    <span class="badge bg-dark position-absolute top-0 end-0 m-2">Sale</span>
+                    <img src="./b719b3d9937034d99b4c52b390893648_6587702778129262357.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sale Item</h5>
+                        <p class="card-text"><s>$50.00</s> $25.00</p>
+                        <a href="#" class="btn btn-outline-dark">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./e9cc7c08541430a3891ba456821ccb76_15363581929469545.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Popular Item</h5>
+                        <div class="mb-2 text-warning">
+                            ★★★★★
+                        </div>
+                        <p class="card-text">$40.00</p>
+                        <a href="#" class="btn btn-outline-dark">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./thumbbig-1368234.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fancy Product</h5>
+                        <p class="card-text">$40.00 - $80.00</p>
+                        <a href="#" class="btn btn-outline-dark">View options</a>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 position-relative">
+                    <span class="badge bg-dark position-absolute top-0 end-0 m-2">Sale</span>
+                    <img src="./4abc7a8642aaf4224f813957ee67cb3e.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Special Item</h5>
+                        <div class="mb-2 text-warning">
+                            ★★★★★
+                        </div>
+                        <p class="card-text"><s>$20.00</s> $18.00</p>
+                        <a href="#" class="btn btn-outline-dark">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 position-relative">
+                    <span class="badge bg-dark position-absolute top-0 end-0 m-2">Sale</span>
+                    <img src="./b719b3d9937034d99b4c52b390893648_6587702778129262357.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sale Item</h5>
+                        <p class="card-text"><s>$50.00</s> $25.00</p>
+                        <a href="#" class="btn btn-outline-dark">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./e9cc7c08541430a3891ba456821ccb76_15363581929469545.webp" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Popular Item</h5>
+                        <div class="mb-2 text-warning">
+                            ★★★★★
+                        </div>
+                        <p class="card-text">$40.00</p>
+                        <a href="#" class="btn btn-outline-dark">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- card 9 -->
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./vivian.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Popular Item</h5>
+                        <div class="mb-2 text-warning">
+                            ★★★★★
+                        </div>
+                        <p class="card-text">$40.00</p>
+                        <a href="#" class="btn btn-outline-dark">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
