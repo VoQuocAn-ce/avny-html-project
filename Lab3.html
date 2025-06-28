@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="bootstrap.min.js"></script>
 
     <style>
@@ -38,23 +39,42 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                        <a class="nav-link active" aria-current="page" href="#">home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Giới thiệu</a>
+                        <a class="nav-link" href="#">about</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sản phẩm</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarShopDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarShopDropdown">
+                            <li style="border-bottom: 1px solid rgb(222, 215, 215);"><a class="dropdown-item"
+                                    href="#">All Products</a></li>
+                            <li><a class="dropdown-item" href="#">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                        </ul>
                     </li>
+                </ul>
+                <ul class="navbar-nav badge rounded border border-dark ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Liên hệ</a>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                            <span class="badge bg-danger rounded-pill bg-dark">0</span>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="shop-header text-center">
+        <h1>A V N Y</h1>
+        <p class="lead">Browse our collection of products</p>
+    </div>
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -163,7 +183,7 @@
                     </div>
                 </div>
             </div>
-            <!-- card 2 -->
+            <!-- card 5 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card h-100 position-relative">
                     <span class="badge bg-dark position-absolute top-0 end-0 m-2">Sale</span>
@@ -178,7 +198,7 @@
                     </div>
                 </div>
             </div>
-            <!-- card 3 -->
+            <!-- card 6 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card h-100 position-relative">
                     <span class="badge bg-dark position-absolute top-0 end-0 m-2">Sale</span>
@@ -190,7 +210,7 @@
                     </div>
                 </div>
             </div>
-            <!-- card 4 -->
+            <!-- card 7 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card h-100">
                     <img src="e9cc7c08541430a3891ba456821ccb76_15363581929469545.webp" class="card-img-top" alt="...">
@@ -204,7 +224,7 @@
                     </div>
                 </div>
             </div>
-            <!-- card 9 -->
+            <!-- card 8 -->
             <div class="col-6 col-md-4 col-lg-3">
                 <div class="card h-100">
                     <img src="vivian.jpg" class="card-img-top" alt="...">
@@ -219,6 +239,37 @@
                 </div>
             </div>
         </div>
+
+        <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Cột 1 -->
+                    <div class="col-md-4 mb-3 text-center">
+                        <h5 class="mb-3">A N V Y</h5>
+                        <p>Specializing in providing high quality products to customers!</p>
+                    </div>
+                    <!-- Cột 2 -->
+                    <div class="col-md-4 mb-3 text-center">
+                        <h5 class="mb-3">Liên hệ</h5>
+                        <ul class="list-unstyled">
+                            <li>Email: AnAndVy1012@anvyshop.com</li>
+                            <li>Điện thoại: 0123 456 789</li>
+                            <li>Địa chỉ: 123 Nguyễn Văn Cừ, TP.HCM</li>
+                        </ul>
+                    </div>
+                    <!-- Cột 3 -->
+                    <div class="col-md-4 mb-3 text-center">
+                        <h5 class="mb-3">Contact</h5>
+                        <a href="https://www.facebook.com/an.voquoc.54" class="text-light me-2"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="https://www.instagram.com/anvq2005110" class="text-light me-2"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://www.youtube.com/@An-nn4hd" class="text-light me-2"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="text-center mt-4 border-top pt-3">
+                    &copy; 2024 A N V Y. All rights reserved.
+                </div>
+            </div>
+        </footer>
 
 </body>
 
